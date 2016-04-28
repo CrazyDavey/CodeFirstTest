@@ -9,6 +9,7 @@ namespace CodeFirstTest.EF
     [Table("InvestorEmail")]
     public partial class InvestorEmail
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int InvestorEmailID { get; set; }
 
         public int InvestorID { get; set; }

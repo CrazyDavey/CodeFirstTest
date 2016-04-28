@@ -9,6 +9,7 @@ namespace CodeFirstTest.EF
     [Table("Unit")]
     public partial class Unit
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UnitID { get; set; }
 
         [StringLength(50)]

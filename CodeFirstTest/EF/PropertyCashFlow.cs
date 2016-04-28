@@ -11,6 +11,7 @@ namespace CodeFirstTest.EF
     {
         public int PropertyCashFlowID { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PropertyID { get; set; }
 
         [Column(TypeName = "date")]

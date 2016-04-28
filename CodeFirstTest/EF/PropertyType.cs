@@ -15,6 +15,7 @@ namespace CodeFirstTest.EF
             Properties = new HashSet<Property>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PropertyTypeID { get; set; }
 
         [Required]

@@ -18,6 +18,7 @@ namespace CodeFirstTest.EF
             Units = new HashSet<Unit>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PropertyID { get; set; }
 
         public int PropertyTypeID { get; set; }

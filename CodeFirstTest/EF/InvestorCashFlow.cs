@@ -9,6 +9,7 @@ namespace CodeFirstTest.EF
     [Table("InvestorCashFlow")]
     public partial class InvestorCashFlow
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int InvestorCashFlowID { get; set; }
 
         public int PropertyID { get; set; }

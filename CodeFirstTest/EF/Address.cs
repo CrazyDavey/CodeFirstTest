@@ -17,6 +17,7 @@ namespace CodeFirstTest.EF
             Properties = new HashSet<Property>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AddressID { get; set; }
 
         [Required]
@@ -38,16 +39,20 @@ namespace CodeFirstTest.EF
         [StringLength(10)]
         public string ZIPCode { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreatedDate { get; set; }
 
         [Required]
         [StringLength(50)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public string CreatedBy { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime UpdatedDate { get; set; }
 
         [Required]
         [StringLength(50)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public string UpdatedBy { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

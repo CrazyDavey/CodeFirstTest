@@ -15,6 +15,7 @@ namespace CodeFirstTest.EF
             InvestorPhones = new HashSet<InvestorPhone>();
         }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PhoneTypeID { get; set; }
 
         [Required]

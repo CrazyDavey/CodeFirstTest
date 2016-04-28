@@ -15,7 +15,7 @@ namespace CodeFirstTest.EF
             Units = new HashSet<Unit>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UnitTypeID { get; set; }
 
         public short Bedrooms { get; set; }
